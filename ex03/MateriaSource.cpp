@@ -26,6 +26,10 @@ MateriaSource& MateriaSource::operator=(const MateriaSource& src) {
 }
 
 void MateriaSource::learnMateria(AMateria* newMateria) {
+    if (newMateria == NULL) {
+        print_color("Could not learn materia, inexistant one");
+        return;
+    }
     int i;
     for (i = 0; i < 4 && inv[i] != NULL; ++i);
     if (i == 4) print_color("Could not learn Materia, can learn at most 4");

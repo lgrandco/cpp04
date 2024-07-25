@@ -36,7 +36,7 @@ int main() {
         print_color("\nFUNCTION TESTS --------------------------\n");
 
         src = new MateriaSource();
-        src->learnMateria(new Ice());
+        src->learnMateria(src->createMateria("ifsjdifsd"));
         src->learnMateria(new Cure());
         src->learnMateria(new Ice());
         src->learnMateria(new Ice());
